@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
         accentColor: Colors.amber,
         fontFamily: 'Quicksand',
-        textTheme: ThemeData.light().textTheme.copyWith(
+        textTheme: TextTheme(
               headline6: TextStyle(
                 fontFamily: 'OpenSans',
                 fontWeight: FontWeight.bold,
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
         appBarTheme: AppBarTheme(
-          textTheme: ThemeData.light().textTheme.copyWith(
+          textTheme: TextTheme(
                 headline6: TextStyle(
                     fontFamily: 'OpenSans',
                     fontSize: 20,
