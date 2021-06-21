@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:personal_expense_app/widgets/chart_bar.dart';
+import 'chart_bar.dart';
 
 import '../models/transaction.dart';
 
@@ -25,7 +25,7 @@ class Chart extends StatelessWidget {
       print(totalSum);
 
       return {'day': DateFormat.E().format(weekDay), 'amount': totalSum};
-    });
+    }).reversed.toList();
   }
 
   double get totalSpending {
